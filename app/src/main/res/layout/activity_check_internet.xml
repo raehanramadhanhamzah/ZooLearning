@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".api.CheckInternetActivity"
+    android:gravity="center"
+    android:background="#6DF4E2C6">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_internet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidak Ada Internet !"
+            android:textSize="20sp"
+            android:fontFamily="@font/popping_black"
+            android:drawableTop="@drawable/icon_no_internet"
+            android:drawablePadding="10dp"/>
+        <Button
+            android:id="@+id/btnRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#6A696A"
+            android:text="Refresh"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppin_semibold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

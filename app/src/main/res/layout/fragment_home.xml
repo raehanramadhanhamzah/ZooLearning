@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment"
+    android:orientation="vertical"
+    android:background="#6DF4E2C6">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/elemen_kotak"
+        android:gravity="start"
+        android:elevation="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/popping_black"
+                android:text="|  ZOO LEARNING"
+                android:textColor="#01A355"
+                android:layout_marginLeft="20dp"
+                android:textSize="25sp"
+                android:gravity="center"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:cardElevation="12dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:scaleType="fitXY"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/sampul_hewan_carnivore" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingStart="16dp"
+                        android:paddingLeft="16dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="@font/poppin_semibold"
+                            android:text="Hewan Carnivor"
+                            android:textColor="@color/black"
+                            android:textSize="19sp"
+                            android:layout_marginTop="12dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppin_light"
+                            android:text="Hewan karnivora adalah pemakan daging. Mereka memiliki gigi tajam dan cakar yang kuat untuk menangkap dan memakan mangsanya"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/btnHewanCarnivore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:backgroundTint="#00BF63"
+                            android:fontFamily="@font/poppin_semibold"
+                            android:text="Lihat Hewan"
+                            android:textColor="#FFFFFF"
+                            android:textSize="11sp"
+                            android:layout_gravity="end"
+                            android:layout_marginRight="10dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:cardElevation="12dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/sampul_hewan_herbivore"
+                        android:scaleType="fitXY"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingStart="16dp"
+                        android:paddingLeft="16dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="@font/poppin_semibold"
+                            android:text="Hewan Herbivora"
+                            android:textColor="@color/black"
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:fontFamily="@font/poppin_light"
+                            android:text="Hewan herbivora adalah pemakan tumbuhan. Mereka memiliki gigi yang cocok untuk mengunyah daun, batang, dan buah. "
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/btnHewanHerbivore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:backgroundTint="#00BF63"
+                            android:fontFamily="@font/poppin_semibold"
+                            android:text="Lihat Hewan"
+                            android:textColor="#FFFFFF"
+                            android:textSize="11sp"
+                            android:layout_gravity="end"
+                            android:layout_marginRight="10dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:cardElevation="12dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/sampul_hewan_omnivore" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingStart="16dp"
+                        android:paddingLeft="16dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="@font/poppin_semibold"
+                            android:text="Hewan Omnivora"
+                            android:textColor="@color/black"
+                            android:textSize="19sp"
+                            android:layout_marginTop="12dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppin_light"
+                            android:text="Hewan omnivora adalah pemakan segala. Mereka makan daging maupun tumbuhan. Gigi mereka cocok dengan makanan yang beragam. "
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/btnHewanOmnivore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:backgroundTint="#00BF63"
+                            android:fontFamily="@font/poppin_semibold"
+                            android:text="Lihat Hewan"
+                            android:textColor="#FFFFFF"
+                            android:textSize="11sp"
+                            android:layout_gravity="end"
+                            android:layout_marginRight="10dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="20dp"
+                app:cardElevation="12dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/sampul_hewan_insectivore" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingStart="16dp"
+                        android:paddingLeft="16dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="@font/poppin_semibold"
+                            android:text="Hewan Insektivora"
+                            android:textColor="@color/black"
+                            android:textSize="19sp"
+                            android:layout_marginTop="12dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="30dp"
+                            android:fontFamily="@font/poppin_light"
+                            android:text="sebutan untuk organisme yang makanannya adalah serangga dan hewan kecil lainnya."
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/btnHewanInsectivore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:backgroundTint="#00BF63"
+                            android:fontFamily="@font/poppin_semibold"
+                            android:text="Lihat Hewan"
+                            android:textColor="#FFFFFF"
+                            android:textSize="11sp"
+                            android:layout_gravity="end"
+                            android:layout_marginRight="10dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
